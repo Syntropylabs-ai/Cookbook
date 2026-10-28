@@ -1,0 +1,801 @@
+{
+ "note": "Synthetic, invented persona (no real person or PII). Trimmed sample of the 'sre' persona: 7 of 25 sessions, 11 of 40 questions.",
+ "persona": {
+  "id": "sre",
+  "name": "Dara Kowalczyk",
+  "summary": "Site reliability engineer at Quillfield Payments, a mid-size payments company. Runs on-call, incident reviews and a database migration project. Lives with a partner and an elderly cat, climbs at a bouldering gym, cooks a lot, is training for a half marathon.",
+  "voice": "Dry, terse, technical; types fast in lowercase sometimes; pragmatic."
+ },
+ "facts": [
+  {
+   "id": "f01",
+   "memory_type": "profile",
+   "statement": "User works as a site reliability engineer at Quillfield Payments.",
+   "value": "Quillfield Payments",
+   "session_id": "syn-sre-s01",
+   "stated_at": "2026-01-05",
+   "supersedes": null
+  },
+  {
+   "id": "f02",
+   "memory_type": "profile",
+   "statement": "User lives in the city of Brindlemoor.",
+   "value": "Brindlemoor",
+   "session_id": "syn-sre-s01",
+   "stated_at": "2026-01-05",
+   "supersedes": null
+  },
+  {
+   "id": "f03",
+   "memory_type": "projects",
+   "statement": "User's database migration project is called Project Heron.",
+   "value": "Project Heron",
+   "session_id": "syn-sre-s02",
+   "stated_at": "2026-01-15",
+   "supersedes": null
+  },
+  {
+   "id": "f04",
+   "memory_type": "projects",
+   "statement": "User's Project Heron cutover is scheduled for April 18.",
+   "value": "April 18",
+   "session_id": "syn-sre-s02",
+   "stated_at": "2026-01-15",
+   "supersedes": null
+  },
+  {
+   "id": "f07",
+   "memory_type": "preferences",
+   "statement": "User prefers answers formatted as bullet lists.",
+   "value": "bullet lists",
+   "session_id": "syn-sre-s05",
+   "stated_at": "2026-02-12",
+   "supersedes": null
+  },
+  {
+   "id": "f08",
+   "memory_type": "domain_facts",
+   "statement": "User's team uses PagerDuty for paging during on-call.",
+   "value": "PagerDuty",
+   "session_id": "syn-sre-s05",
+   "stated_at": "2026-02-12",
+   "supersedes": null
+  },
+  {
+   "id": "f09",
+   "memory_type": "workflows",
+   "statement": "When a production incident is declared, user opens the incident channel, then names an incident commander, then posts a status update every thirty minutes, then books the review within three days.",
+   "value": "",
+   "session_id": "syn-sre-s06",
+   "stated_at": "2026-02-19",
+   "supersedes": null,
+   "trigger": "when a production incident is declared",
+   "steps": [
+    {
+     "text": "Open a dedicated incident channel.",
+     "key": "open incident channel"
+    },
+    {
+     "text": "Name an incident commander.",
+     "key": "name incident commander"
+    },
+    {
+     "text": "Post a status update every thirty minutes.",
+     "key": "status every thirty"
+    },
+    {
+     "text": "Book the incident review within three days.",
+     "key": "book the review"
+    }
+   ]
+  },
+  {
+   "id": "f10",
+   "memory_type": "domain_facts",
+   "statement": "User's manager is Oskar Brandt.",
+   "value": "Oskar Brandt",
+   "session_id": "syn-sre-s07",
+   "stated_at": "2026-02-28",
+   "supersedes": null
+  },
+  {
+   "id": "f11",
+   "memory_type": "preferences",
+   "statement": "User prefers metric units, including in recipes.",
+   "value": "metric units",
+   "session_id": "syn-sre-s07",
+   "stated_at": "2026-02-28",
+   "supersedes": null
+  },
+  {
+   "id": "f12",
+   "memory_type": "profile",
+   "statement": "User has an elderly cat named Biscuit who is 17 years old.",
+   "value": "Biscuit",
+   "session_id": "syn-sre-s07",
+   "stated_at": "2026-02-28",
+   "supersedes": null
+  },
+  {
+   "id": "f13",
+   "memory_type": "projects",
+   "statement": "User's Project Heron cutover is scheduled for May 30.",
+   "value": "May 30",
+   "session_id": "syn-sre-s08",
+   "stated_at": "2026-03-09",
+   "supersedes": "f04"
+  },
+  {
+   "id": "f14",
+   "memory_type": "domain_facts",
+   "statement": "User's bouldering gym is called Granite Yard.",
+   "value": "Granite Yard",
+   "session_id": "syn-sre-s08",
+   "stated_at": "2026-03-09",
+   "supersedes": null
+  },
+  {
+   "id": "f24",
+   "memory_type": "projects",
+   "statement": "User's Project Heron cutover is scheduled for July 18.",
+   "value": "July 18",
+   "session_id": "syn-sre-s17",
+   "stated_at": "2026-05-22",
+   "supersedes": "f13"
+  },
+  {
+   "id": "f25",
+   "memory_type": "domain_facts",
+   "statement": "User's payment API has an availability SLO of 99.95 percent.",
+   "value": "99.95 percent",
+   "session_id": "syn-sre-s17",
+   "stated_at": "2026-05-22",
+   "supersedes": null
+  }
+ ],
+ "decoys": [
+  {
+   "id": "d01",
+   "memory_type": "profile",
+   "statement": "User has a sister named Wiktoria who lives in Gdansk.",
+   "value": "Wiktoria"
+  },
+  {
+   "id": "d02",
+   "memory_type": "profile",
+   "statement": "User drives a green Skoda Octavia.",
+   "value": "Skoda Octavia"
+  }
+ ],
+ "sessions": [
+  {
+   "session_id": "syn-sre-s01",
+   "started_at": "2026-01-05T12:10:00+00:00",
+   "summary": "User asked for help drafting a terse intro message for a new Slack channel for postmortem follow-ups, mentioning they're an SRE at Quillfield Payments and live in Brindlemoor.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need a short intro msg for a new slack channel. its for incident postmortem follow-ups. i'm an SRE at Quillfield Payments so keep it ops-flavored, no fluff",
+     "fact_ids": [
+      "f01"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Draft:\n\n\"Welcome to #postmortem-followups. This channel tracks action items from incident reviews: owners, due dates, status. Post the link to the postmortem doc, then thread each action item under it. Updates in-thread, not in main. Blameless language only.\"\n\nWant it shorter or with a pinned template?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "decent. drop the blameless line, that's already in the doc template. and add that items older than 30 days get flagged",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Updated:\n\n\"Welcome to #postmortem-followups. This channel tracks action items from incident reviews: owners, due dates, status. Post the postmortem doc link, then thread each action item under it. Updates go in-thread, not main. Items open more than 30 days get flagged.\"\n\nWant a line on who does the flagging?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "yeah, say the channel owner does it weekly. also i'm posting this in the morning before the others in brindlemoor are online so want it to read standalone",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Understood, though I'd note I only have \"Brindlemoor\" from what you wrote, so I'll keep the tone neutral. Standalone version:\n\n\"Welcome to #postmortem-followups. This channel tracks action items from incident reviews: owners, due dates, status. Post the postmortem doc link, then thread each action item under it. Updates go in-thread, not main. The channel owner flags items open more than 30 days, weekly.\"\n\nIt doesn't depend on anything said earlier.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "oops, to be clear i live in Brindlemoor, that's where the team is based too. fine, text is good. should i pin it?",
+     "fact_ids": [
+      "f02"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Yes, pin it. New joiners see it first, and you can edit the pinned message later without adding noise. Setting the channel topic to a one-liner like \"Postmortem action items: owner, due date, status\" helps too.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good call. will do topic too. thanks",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Sounds good. If you want, I can draft a thread template for action items next.",
+     "fact_ids": []
+    }
+   ]
+  },
+  {
+   "session_id": "syn-sre-s02",
+   "started_at": "2026-01-15T09:00:00+00:00",
+   "summary": "The user got a timeline, top-6 risk list, and asks section for a Postgres 12-to-16 migration kickoff, mentioning that the project is Project Heron with cutover on April 18.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need a rough timeline + risk list for a db migration kickoff. kickoff is next week, audience is eng leads and a couple of product people. keep it short",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Sure. Quick questions so I don't pad it: what's the source and target DB, and is there a hard cutover date you're working back from? If not, I can draft with placeholder phases and you fill in the dates.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "postgres 12 to 16, same cloud. the project is Project Heron and cutover is April 18. work back from that",
+     "fact_ids": [
+      "f03",
+      "f04"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Working back from April 18, a draft:\n\n- Late Jan: scope, inventory of schemas/extensions/consumers\n- Feb: staging build on PG16, replication set up, app compatibility testing\n- Early Mar: performance and load testing, rollback rehearsal #1\n- Late Mar: full dress rehearsal, go/no-go criteria agreed\n- Early Apr: change freeze, final sync checks\n- April 18: cutover\n- Post-cutover: hypercare, decommission old cluster after a hold period\n\nWant me to put owners on each phase?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "not yet. risks first. keep to the top 6",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Top 6 risks:\n\n1. Replication lag or divergence at cutover: mitigate with lag thresholds and checksum validation.\n2. Query regressions on PG16 (planner changes): capture and replay production traffic in staging.\n3. Extension or driver incompatibility: inventory early, test in Feb.\n4. Rollback path untested or lossy: rehearse twice, define a reverse-replication plan.\n5. Cutover window overruns: time every step in rehearsals, set a hard abort point.\n6. Hidden consumers (cron jobs, analytics, ETL) still pointing at the old DB: audit connection logs.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good. #6 is the one that always bites. add a line on how to find them",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Revised #6: \"Hidden consumers still pointing at the old DB. Mitigation: enable connection logging on the source for 2–3 weeks, group by user/host/application_name, and chase down every unrecognized client before the freeze. Re-check the week before cutover.\"",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "nice. can you merge timeline and risks into one block i can paste into the kickoff doc",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Here's the combined block:\n\n**Timeline**\n- Late Jan: scope and inventory\n- Feb: PG16 staging, replication, compat testing\n- Early Mar: load testing, rollback rehearsal 1\n- Late Mar: dress rehearsal, go/no-go criteria\n- Early Apr: change freeze, final checks\n- April 18: cutover\n- After: hypercare, then decommission\n\n**Top risks**\n1. Replication lag/divergence: lag thresholds, checksums\n2. PG16 query regressions: traffic replay in staging\n3. Extension/driver incompatibility: inventory early\n4. Rollback untested: two rehearsals, reverse replication\n5. Window overrun: timed steps, hard abort point\n6. Hidden consumers: connection logging 2–3 weeks, chase unknown clients\n\nWant a short \"asks of the room\" section too?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "yeah, 3 bullets max",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "**Asks**\n- Each team names a contact for DB-dependent services by end of Jan\n- Agree on a change freeze starting early April\n- Product signs off on a cutover window with acceptable downtime",
+     "fact_ids": []
+    }
+   ]
+  },
+  {
+   "session_id": "syn-sre-s05",
+   "started_at": "2026-02-12T19:45:00+00:00",
+   "summary": "The user had the assistant tighten a rambling on-call alert runbook summary into a concise bullet-list format, mentioning they prefer bullet lists and that their team pages through PagerDuty.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need to clean up a runbook summary for our disk-space alert. it's a wall of text right now. can i paste it?",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Yes, paste it in. Tell me the audience (on-call responder at 3am, or a reviewer) and I'll tune the level of detail.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "audience is whoever's on call, half asleep. here: \"When the disk_usage_high alert fires on the db hosts, first check whether it's WAL growth or table data, usually by looking at pg_wal size and df. If WAL, check for stuck replication slots or a failing archive_command. If it's data, look for runaway temp files or a big batch job. If usage is over 90% and climbing, page the DBA secondary. Otherwise you can wait until business hours and open a ticket.\"",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Here's a first pass:\n\n**disk_usage_high (db hosts)**\n- Triage: compare `pg_wal` size vs `df` to see if growth is WAL or data.\n- WAL: check for stuck replication slots and a failing `archive_command`.\n- Data: look for runaway temp files or large batch jobs.\n- Escalate: usage >90% and climbing → page DBA secondary.\n- Otherwise: open a ticket, handle in business hours.\n\nWant it shorter or with commands inline?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good. i prefer bullet lists for anything on-call, so keep that. add the actual commands inline",
+     "fact_ids": [
+      "f07"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "**disk_usage_high (db hosts)**\n- Triage: `du -sh $PGDATA/pg_wal` vs `df -h $PGDATA`.\n- WAL: `SELECT slot_name, active, restart_lsn FROM pg_replication_slots;` and check `pg_stat_archiver` for `failed_count`.\n- Data: `SELECT datname, temp_bytes FROM pg_stat_database;` and `pg_stat_activity` for long-running batch queries.\n- Escalate: >90% and climbing → page DBA secondary.\n- Otherwise: ticket, handle in business hours.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "nice. the escalate line is vague. how do i say how to page without sounding like a novel",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Name the target and the trigger explicitly. Something like: \"Escalate: >90% and climbing → page `dba-secondary` with host, current %, and growth source (WAL/data).\" It tells them who and what to include. If you have a service name for the escalation policy, put it in instead of the generic label.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "we use PagerDuty so i'll reference the escalation policy there. can you rewrite that line to say that",
+     "fact_ids": [
+      "f08"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "- Escalate: >90% and climbing → page the DBA secondary via the PagerDuty escalation policy. Include host, current %, and growth source (WAL/data) in the incident note.\n\nIf you drop in the policy's name, I'll add it in backticks.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "policy name is fine as is, i'll fill it in later. anything missing?",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Two small additions would help a groggy responder:\n- A \"do not\" line: don't delete WAL files manually.\n- A resolve condition: usage below 80% and stable for 30 minutes before closing.\n\nThe rest reads cleanly.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "yeah good call on the wal thing. adding both. done, thx",
+     "fact_ids": []
+    }
+   ]
+  },
+  {
+   "session_id": "syn-sre-s06",
+   "started_at": "2026-02-19T07:30:00+00:00",
+   "summary": "The user had the assistant draft a concise incident response template based on their routine of opening an incident channel, naming an incident commander, posting status every thirty minutes, and booking the review within three days.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need a template for incident response steps to share w/ the team. keep it short, something people can skim at 3am",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "- Title: Incident Response Template\n- Sections: Trigger, Roles, Steps, Comms, Follow-up\n- Format: numbered steps, one line each, owner in brackets\n- Want me to draft it with placeholders, or do you have the sequence you follow already?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "i have the sequence. when a production incident is declared, first thing is open incident channel, dedicated one, nothing shared with other chatter",
+     "fact_ids": [
+      "f09"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "- Trigger: A production incident is declared\n- Step 1: Open incident channel (dedicated, one per incident, named consistently e.g. inc-YYYYMMDD-short-desc)\n- What's next in your sequence?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "then name incident commander, one person, announced in the channel. after that status every thirty minutes, even if it's just 'no change'",
+     "fact_ids": [
+      "f09"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "- Step 2: Name incident commander (single owner, stated explicitly in the channel)\n- Step 3: Post status every thirty minutes, even if nothing changed\n- Suggested status format: current impact, current action, next update time\n- Anything after resolution?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "last one: book the review within three days. blameless, obv",
+     "fact_ids": [
+      "f09"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "- Step 4: Book the review within three days of declaration (blameless)\n\nFull template:\n- **Trigger:** Production incident declared\n- **1. Open incident channel:** dedicated, consistent naming\n- **2. Name incident commander:** one person, announced in channel\n- **3. Status every thirty minutes:** impact, action, next update time\n- **4. Book the review:** within three days, blameless\n- **Notes:** IC owns the timeline; link the channel in the review invite",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good. add a line for what the IC does if they need to hand off",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "- **Handoff:** IC posts a handoff message in the channel stating current impact, actions in flight, and open questions\n- New IC acknowledges explicitly in the channel before the old IC leaves\n- Log the handoff time in the timeline",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "nice. that works, shipping it",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "- Template is ready to paste into your wiki or doc\n- Tip: pin it in the channel topic or a bookmark so it's visible when a new incident channel is opened",
+     "fact_ids": []
+    }
+   ]
+  },
+  {
+   "session_id": "syn-sre-s07",
+   "started_at": "2026-02-28T19:10:00+00:00",
+   "summary": "User planned a dinner menu for six guests, had a chicken recipe converted to metric units, sorted timing and cat-safety around the cooking, and mentioned their manager Oskar Brandt and their 17-year-old elderly cat Biscuit.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need a dinner menu for 6 this saturday-ish. guests coming, teodor is cooking the starter. i want a main + side + dessert. nothing fussy",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "- Main: braised chicken thighs with lemon, olives and white beans\n- Side: roasted fennel and potatoes with thyme\n- Dessert: olive oil cake with yoghurt and citrus\n- All three mostly make-ahead, so you're not stuck in the kitchen.\n\nWant a veg-friendly swap for the main?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "chicken is fine. recipe i have is in cups and ounces, serves 4. scale to 6 and give it to me in metric units, i don't do cups",
+     "fact_ids": [
+      "f11"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Scaled to 6 (×1.5), metric:\n- Chicken thighs, bone-in: 1.4 kg\n- Olive oil: 45 ml\n- Onion, sliced: 300 g\n- Garlic: 6 cloves\n- White beans, drained: 540 g (about 2 tins)\n- Chicken stock: 375 ml\n- Green olives: 120 g\n- Lemons: 1.5 → use 2, juice plus zest\n- Oven: 180 °C, about 55 minutes\n\nUse a wider pan or two dishes so the thighs stay in one layer.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "ok. oven only fits one big dish. will 1.4kg thighs crowd it",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "- A 30×40 cm roasting tin holds 1.4 kg in one layer, snugly.\n- Skin side up, and don't submerge it in liquid. Stock should come about halfway up.\n- If it's tight, brown the thighs in batches first and add 10 minutes to the bake.\n- Put the fennel and potatoes on a separate tray on a lower rack at 200 °C.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good. timing: i'm getting home from a call with oskar brandt, my manager, around 5 so cooking starts 5:30. guests at 8",
+     "fact_ids": [
+      "f10"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "- 5:30 Prep: brown thighs, build the base\n- 6:15 Chicken into the oven, 180 °C\n- 6:45 Potatoes and fennel in at 200 °C\n- 7:15 Chicken out, rest, add olives and lemon\n- 7:30 Cake already done (bake it Friday)\n- 8:00 Teodor's starter out, main stays warm at 80 °C\n\nThat leaves about 30 minutes of slack.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "fine. one thing, biscuit is our 17 year old cat, elderly and gets stressed by noise. so she'll hide in the bedroom. nothing on the menu she could steal/get sick from though? onions garlic",
+     "fact_ids": [
+      "f12"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "- Onions and garlic are toxic to cats, so keep her away from the cooking scraps and plates.\n- Bin the chicken skin and bones in a lidded bin. Cooked bones splinter.\n- Lemon and citrus peel can upset cats too.\n- Give her a quiet room with water, a litter tray and her bed before guests arrive. Shut the door so nobody wanders in.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "yep. dessert, olive oil cake, scale it too. recipe is for a 20cm tin, 8 slices",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "For 6 guests, the 20 cm tin with 8 slices is enough, so no scaling needed.\n- Leaves two slices spare.\n- Bake at 170 °C for 40–45 minutes, until a skewer comes out clean.\n- Serve with 300 g Greek yoghurt and orange zest.\n\nIf you want seconds for everyone, use a 23 cm tin and multiply the recipe by 1.3.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "20cm is fine. thanks, that's sorted",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "- Menu: lemon-olive chicken and beans, roasted fennel and potatoes, olive oil cake\n- Bake the cake Friday\n- Start cooking 5:30, guests at 8\n\nEnjoy the dinner.",
+     "fact_ids": []
+    }
+   ]
+  },
+  {
+   "session_id": "syn-sre-s08",
+   "started_at": "2026-03-09T07:45:00+00:00",
+   "summary": "The user rescheduled Project Heron milestones around the new May 30 cutover and planned a Thursday evening climbing session at Granite Yard.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need to push the heron milestones. cutover moved, we've just switched it to May 30. can you help me shift the downstream dates",
+     "fact_ids": [
+      "f13"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Sure. Shifting everything by the same offset is the simplest approach. Can you give me the current milestone list with dates, or tell me which ones are fixed?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "schema freeze, dry run 1, dry run 2, rollback rehearsal, go/no-go. dry run 2 was 2 weeks before cutover, rollback rehearsal 10 days before, go/no-go 3 days before. schema freeze 5 weeks before",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Working back from May 30:\n- Schema freeze: Fri Apr 25\n- Dry run 1: leave your gap choice, or place it ~3 weeks out, Fri May 8\n- Dry run 2: Sat May 16 (2 weeks before). You may prefer Fri May 15 to avoid a weekend.\n- Rollback rehearsal: Wed May 20\n- Go/no-go: Wed May 27\n\nNote May 30 is a Saturday, so confirm that's intended.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "sat is intended, low traffic window. schema freeze at 5 weeks is wrong tho, 5 weeks before May 30 is Apr 25? check",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Checking: May 30 minus 35 days is Apr 25, so that's correct. Apr 25 is a Saturday, though, so Fri Apr 24 is the practical date.\n\n- Schema freeze: Fri Apr 24\n- Dry run 1: Fri May 8\n- Dry run 2: Fri May 15\n- Rollback rehearsal: Wed May 20\n- Go/no-go: Wed May 27",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good. now unrelated, want to fit a climbing session this week. usually go after work, tue or thu evening. i'm at Granite Yard, they do late hours on thu",
+     "fact_ids": [
+      "f14"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Thursday looks better then, with the late hours. Here's a plan:\n- Arrive ~18:30, warm up 15 min on easy problems\n- 45 min of projecting at your limit grade\n- 20 min of antagonist/pull-down work\n- Cool down and stretch\n\nWant me to block a calendar slot?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "yeah block thu 18:30 to 20:30. keep it short, thanks",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Here's the entry:\n- Thu 18:30–20:30: Climbing session\n- Reminder 17:45\n\nI can't write to your calendar directly, so add it there. Want the milestone dates as a shareable list as well?",
+     "fact_ids": []
+    }
+   ]
+  },
+  {
+   "session_id": "syn-sre-s17",
+   "started_at": "2026-05-22T13:15:00+00:00",
+   "summary": "User revised the Project Heron migration plan timeline for the new July 18 cutover and drafted an SLO report section on the payment API's 99.95 percent availability target and error budget burn.",
+   "turns": [
+    {
+     "role": "user",
+     "text": "need to revise the heron migration plan before it goes to leadership. timeline section is stale. we've just switched the cutover to July 18, so the whole schedule shifts",
+     "fact_ids": [
+      "f24"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "Understood, so the new cutover anchor is July 18. Everything keyed off the old date needs to move: rehearsal windows, freeze start, and the rollback decision point. Want me to rewrite the timeline as offsets from cutover (T-14d, T-7d, T-1d, T+1d) so future slips are a one-line change?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "yes do that. keep it terse. paragraphs not a table",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Yes, offsets work better. Draft:\n\nTwo weeks before cutover, run the full rehearsal against a restored snapshot and record replication lag and validation results. One week before, freeze schema changes and confirm the rollback runbook with a timed dry run. The day before, do a final consistency check and go/no-go with stakeholders.\n\nOn cutover day, switch writes, watch error rates and replication for the first hour, and hold the rollback decision point at the two-hour mark. The day after, run reconciliation and close out the plan with a short review.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "good. now the slo report. section on payment api availability. our target is 99.95 percent, need to show error budget burn",
+     "fact_ids": [
+      "f25"
+     ]
+    },
+    {
+     "role": "assistant",
+     "text": "At 99.95 percent, a 30-day window gives you about 21.6 minutes of allowed downtime. That's the number leadership should see first. For burn, show budget consumed so far as a percentage, the burn rate over the last 7 days, and the projected remaining budget at month end. Do you have the downtime minutes for the period?",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "9.4 min so far this window, mostly the cache stampede",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "You've used about 43.5 percent of the budget (9.4 of 21.6 minutes), leaving roughly 12.2 minutes. Suggested wording: \"Payment API availability is on target, with 43.5 percent of the error budget consumed, primarily from a single session-cache incident. Remediation actions are in progress.\" If the window is past the midpoint, say whether burn is ahead of or behind a linear pace.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "about 60% through the window so we're under linear pace. add that",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Added: \"At 60 percent of the window, budget consumption of 43.5 percent is below linear pace, giving headroom for planned migration work.\" You may also want a line noting that the shifted cutover gives the team more time before any elevated-risk period.",
+     "fact_ids": []
+    },
+    {
+     "role": "user",
+     "text": "nice, keep that last line. send me the full combined text",
+     "fact_ids": []
+    },
+    {
+     "role": "assistant",
+     "text": "Combined text:\n\nMigration plan: Cutover is anchored at T0, with a full rehearsal at T-14d, schema freeze and timed rollback dry run at T-7d, final consistency check and go/no-go at T-1d. At T0 writes switch, with a rollback decision point at two hours. Reconciliation and review happen at T+1d.\n\nSLO report: Payment API availability is on target. At 60 percent of the window, 43.5 percent of the error budget is consumed, below linear pace, mostly from one session-cache incident with remediation in progress. The shifted cutover gives the team more time before any elevated-risk period.",
+     "fact_ids": []
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "qid": "syn-sre-q01",
+   "category": "single_fact",
+   "text": "Where do I work as a site reliability engineer?",
+   "expected_answer": "You work at Quillfield Payments.",
+   "expected_span": "Quillfield Payments",
+   "fact_ids": [
+    "f01"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q02",
+   "category": "single_fact",
+   "text": "What is my database migration project called?",
+   "expected_answer": "Your database migration project is called Project Heron.",
+   "expected_span": "Project Heron",
+   "fact_ids": [
+    "f03"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q04",
+   "category": "single_fact",
+   "text": "What's the name of my cat, and how old is she?",
+   "expected_answer": "Your elderly cat is named Biscuit and is 17 years old.",
+   "expected_span": "Biscuit",
+   "fact_ids": [
+    "f12"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q05",
+   "category": "single_fact",
+   "text": "Which bouldering gym do I go to?",
+   "expected_answer": "Your bouldering gym is Granite Yard.",
+   "expected_span": "Granite Yard",
+   "fact_ids": [
+    "f14"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q07",
+   "category": "single_fact",
+   "text": "What availability SLO does my payment API have?",
+   "expected_answer": "The payment API has an availability SLO of 99.95 percent.",
+   "expected_span": "99.95 percent",
+   "fact_ids": [
+    "f25"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q20",
+   "category": "temporal",
+   "text": "Back in February, when was my Project Heron cutover scheduled?",
+   "expected_answer": "It was scheduled for April 18.",
+   "expected_span": "April 18",
+   "fact_ids": [
+    "f04"
+   ],
+   "decoy_ids": [],
+   "as_of": "2026-02-10"
+  },
+  {
+   "qid": "syn-sre-q24",
+   "category": "latest_value",
+   "text": "When is my Project Heron cutover currently scheduled?",
+   "expected_answer": "The cutover is scheduled for July 18.",
+   "expected_span": "July 18",
+   "fact_ids": [
+    "f24"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q30",
+   "category": "procedural",
+   "text": "What are my steps when a production incident is declared?",
+   "expected_answer": "Open a dedicated incident channel, name an incident commander, post a status update every thirty minutes, then book the incident review within three days.",
+   "expected_span": "incident commander",
+   "fact_ids": [
+    "f09"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q31",
+   "category": "procedural",
+   "text": "What do I do right after naming the incident commander during an incident?",
+   "expected_answer": "Post a status update every thirty minutes.",
+   "expected_span": "every thirty minutes",
+   "fact_ids": [
+    "f09"
+   ],
+   "decoy_ids": [],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q34",
+   "category": "abstention",
+   "text": "What's my sister's name and where does she live?",
+   "expected_answer": "",
+   "expected_span": "",
+   "fact_ids": [],
+   "decoy_ids": [
+    "d01"
+   ],
+   "as_of": null
+  },
+  {
+   "qid": "syn-sre-q35",
+   "category": "abstention",
+   "text": "What color is my car?",
+   "expected_answer": "",
+   "expected_span": "",
+   "fact_ids": [],
+   "decoy_ids": [
+    "d02"
+   ],
+   "as_of": null
+  }
+ ]
+}

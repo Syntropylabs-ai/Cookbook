@@ -1,0 +1,1140 @@
+{
+ "note": "EvalKit dataset rows (flat columns) for persona 'sre' from run full-2. The run ingested all 25 sessions, so records can mention facts outside the trimmed sample. Record ids are replaced by short aliases (rec-NNN).",
+ "rows": {
+  "retrieval": [
+   {
+    "input": "Where do I work as a site reliability engineer?",
+    "output": "You work as an SRE at Quillfield Payments.",
+    "retrievedIds": [
+     "rec-001",
+     "rec-002",
+     "rec-003",
+     "rec-004",
+     "rec-005"
+    ],
+    "relevantIds": [
+     "rec-001"
+    ],
+    "qid": "syn-sre-q01",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "What is my database migration project called?",
+    "output": "Your database migration project is called Project Heron. It's also referred to as the \"Heron migration plan.\"",
+    "retrievedIds": [
+     "rec-006",
+     "rec-007",
+     "rec-008",
+     "rec-009",
+     "rec-010"
+    ],
+    "relevantIds": [
+     "rec-007",
+     "rec-009",
+     "rec-011",
+     "rec-012",
+     "rec-013",
+     "rec-014",
+     "rec-015"
+    ],
+    "qid": "syn-sre-q02",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "Which bouldering gym do I go to?",
+    "output": "You climb at Granite Yard. Your notes don't say whether it's a bouldering gym specifically, but it's the gym you go to, and it has late hours on Thursdays.",
+    "retrievedIds": [
+     "rec-016",
+     "rec-017",
+     "rec-018",
+     "rec-019",
+     "rec-020"
+    ],
+    "relevantIds": [
+     "rec-018",
+     "rec-019",
+     "rec-016"
+    ],
+    "qid": "syn-sre-q05",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "What availability SLO does my payment API have?",
+    "output": "Your Payment API has an availability SLO target of 99.95%. In the current 30-day window, that gives a 21.6-minute error budget.",
+    "retrievedIds": [
+     "rec-005",
+     "rec-021",
+     "rec-022",
+     "rec-023",
+     "rec-001"
+    ],
+    "relevantIds": [
+     "rec-005"
+    ],
+    "qid": "syn-sre-q07",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "What's the name of my cat, and how old is she?",
+    "output": "Your cat is named Biscuit, and she's 17 years old.",
+    "retrievedIds": [
+     "rec-024",
+     "rec-025",
+     "rec-026",
+     "rec-027",
+     "rec-028"
+    ],
+    "relevantIds": [
+     "rec-024"
+    ],
+    "qid": "syn-sre-q04",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "Back in February, when was my Project Heron cutover scheduled?",
+    "output": "I don't have that information.",
+    "retrievedIds": [
+     "rec-014",
+     "rec-013",
+     "rec-029",
+     "rec-012",
+     "rec-009"
+    ],
+    "relevantIds": [
+     "rec-014"
+    ],
+    "qid": "syn-sre-q20",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "temporal"
+   },
+   {
+    "input": "When is my Project Heron cutover currently scheduled?",
+    "output": "Your Project Heron cutover is currently scheduled for Saturday, July 18, 2026. It was originally April 18, and my notes say it was later switched to July 18. An older note also lists May 30, and the milestone dates built around it (such as Go/No-Go on May 27) may be out of date.",
+    "retrievedIds": [
+     "rec-013",
+     "rec-014",
+     "rec-029",
+     "rec-012",
+     "rec-009"
+    ],
+    "relevantIds": [
+     "rec-013"
+    ],
+    "qid": "syn-sre-q24",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   },
+   {
+    "input": "What are my steps when a production incident is declared?",
+    "output": "Your incident response sequence is:\n\n1. Open a dedicated, consistently named incident channel for that one incident, with no shared chatter.\n2. Name a single incident commander and announce them in the channel.\n3. Post status updates every thirty minutes, even if nothing has changed.\n4. Include an IC handoff process.\n5. Book a blameless post-incident review within three days of declaration.",
+    "retrievedIds": [
+     "rec-030",
+     "rec-031",
+     "rec-032",
+     "rec-004",
+     "rec-033"
+    ],
+    "relevantIds": [
+     "rec-030",
+     "rec-004",
+     "rec-031",
+     "rec-032",
+     "rec-002"
+    ],
+    "qid": "syn-sre-q30",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "procedural"
+   },
+   {
+    "input": "What do I do right after naming the incident commander during an incident?",
+    "output": "Next, post status updates every thirty minutes, even if nothing has changed. Your sequence also includes an IC handoff process, and a blameless post-incident review booked within three days of declaration.",
+    "retrievedIds": [
+     "rec-032",
+     "rec-030",
+     "rec-031",
+     "rec-034",
+     "rec-004"
+    ],
+    "relevantIds": [
+     "rec-030",
+     "rec-004",
+     "rec-031",
+     "rec-032",
+     "rec-002"
+    ],
+    "qid": "syn-sre-q31",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "procedural"
+   }
+  ],
+  "post_eviction": [
+   {
+    "input": "Where do I work as a site reliability engineer?",
+    "output": "You work as an SRE at Quillfield Payments.",
+    "target": "Quillfield Payments",
+    "qid": "syn-sre-q01",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "What is my database migration project called?",
+    "output": "Your database migration project is called Project Heron. It's also referred to as the \"Heron migration plan.\"",
+    "target": "Project Heron",
+    "qid": "syn-sre-q02",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "Which bouldering gym do I go to?",
+    "output": "You climb at Granite Yard. Your notes don't say whether it's a bouldering gym specifically, but it's the gym you go to, and it has late hours on Thursdays.",
+    "target": "Granite Yard",
+    "qid": "syn-sre-q05",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "What availability SLO does my payment API have?",
+    "output": "Your Payment API has an availability SLO target of 99.95%. In the current 30-day window, that gives a 21.6-minute error budget.",
+    "target": "99.95 percent",
+    "qid": "syn-sre-q07",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "What's the name of my cat, and how old is she?",
+    "output": "Your cat is named Biscuit, and she's 17 years old.",
+    "target": "Biscuit",
+    "qid": "syn-sre-q04",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "single_fact"
+   },
+   {
+    "input": "Back in February, when was my Project Heron cutover scheduled?",
+    "output": "I don't have that information.",
+    "target": "April 18",
+    "qid": "syn-sre-q20",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "temporal"
+   },
+   {
+    "input": "When is my Project Heron cutover currently scheduled?",
+    "output": "Your Project Heron cutover is currently scheduled for Saturday, July 18, 2026. It was originally April 18, and my notes say it was later switched to July 18. An older note also lists May 30, and the milestone dates built around it (such as Go/No-Go on May 27) may be out of date.",
+    "target": "July 18",
+    "qid": "syn-sre-q24",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   },
+   {
+    "input": "What are my steps when a production incident is declared?",
+    "output": "Your incident response sequence is:\n\n1. Open a dedicated, consistently named incident channel for that one incident, with no shared chatter.\n2. Name a single incident commander and announce them in the channel.\n3. Post status updates every thirty minutes, even if nothing has changed.\n4. Include an IC handoff process.\n5. Book a blameless post-incident review within three days of declaration.",
+    "target": "incident commander",
+    "qid": "syn-sre-q30",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "procedural"
+   },
+   {
+    "input": "What do I do right after naming the incident commander during an incident?",
+    "output": "Next, post status updates every thirty minutes, even if nothing has changed. Your sequence also includes an IC handoff process, and a blameless post-incident review booked within three days of declaration.",
+    "target": "every thirty minutes",
+    "qid": "syn-sre-q31",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "procedural"
+   },
+   {
+    "input": "Where do I work as a site reliability engineer?",
+    "output": "Quillfield Payments.",
+    "target": "Quillfield Payments",
+    "qid": "syn-sre-q01",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "single_fact"
+   },
+   {
+    "input": "What is my database migration project called?",
+    "output": "Your database migration project is called Project Heron.",
+    "target": "Project Heron",
+    "qid": "syn-sre-q02",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "single_fact"
+   },
+   {
+    "input": "What's the name of my cat, and how old is she?",
+    "output": "Her name is Biscuit, and she's 17 years old.",
+    "target": "Biscuit",
+    "qid": "syn-sre-q04",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "single_fact"
+   },
+   {
+    "input": "Which bouldering gym do I go to?",
+    "output": "Granite Yard. You mentioned going there after work, usually on Tuesday or Thursday evenings, with late hours on Thursday.",
+    "target": "Granite Yard",
+    "qid": "syn-sre-q05",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "single_fact"
+   },
+   {
+    "input": "What availability SLO does my payment API have?",
+    "output": "Your payment API's availability target is 99.95 percent.",
+    "target": "99.95 percent",
+    "qid": "syn-sre-q07",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "single_fact"
+   },
+   {
+    "input": "Back in February, when was my Project Heron cutover scheduled?",
+    "output": "In February, your Project Heron cutover was scheduled for April 18. You moved it to May 30 in March, and later to July 18.",
+    "target": "April 18",
+    "qid": "syn-sre-q20",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "temporal"
+   },
+   {
+    "input": "When is my Project Heron cutover currently scheduled?",
+    "output": "Your Project Heron cutover is currently scheduled for July 18, after you moved it from May 30 (and originally April 18).",
+    "target": "July 18",
+    "qid": "syn-sre-q24",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "latest_value"
+   },
+   {
+    "input": "What are my steps when a production incident is declared?",
+    "output": "When a production incident is declared, you open a dedicated incident channel, name a single incident commander and announce them in the channel, then post status every thirty minutes, even if it's just \"no change.\" Finally, you book a blameless review within three days.",
+    "target": "incident commander",
+    "qid": "syn-sre-q30",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "procedural"
+   },
+   {
+    "input": "What do I do right after naming the incident commander during an incident?",
+    "output": "Post a status update every thirty minutes, even if it's just \"no change.\" A useful format is current impact, current action, and next update time.",
+    "target": "every thirty minutes",
+    "qid": "syn-sre-q31",
+    "case_id": "syn-sre",
+    "mode": "full_context",
+    "category": "procedural"
+   }
+  ],
+  "temporal": [
+   {
+    "input": "Which tool does my team page with, and what's my manager's name?",
+    "output": "Your team pages with PagerDuty, and your manager is Oskar Brandt.",
+    "supersedes": [
+     {
+      "newId": "rec-003",
+      "oldId": "rec-035",
+      "raw": [
+       "rec-036",
+       "rec-037",
+       "rec-038",
+       "rec-039",
+       "rec-035"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q14",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "multi_session"
+   },
+   {
+    "input": "Who do I live with, and what district do I live in?",
+    "output": "You live with your partner, Teodor, in Brindlemoor. I don't have a record of a more specific district than that.",
+    "supersedes": [
+     {
+      "newId": "rec-040",
+      "oldId": "rec-041",
+      "raw": [
+       "rec-042",
+       "rec-041",
+       "rec-025",
+       "rec-039",
+       "rec-043"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q12",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "multi_session"
+   },
+   {
+    "input": "When did I switch to paragraph-style answers instead of bullets?",
+    "output": "I don't have that information.",
+    "supersedes": [
+     {
+      "newId": "rec-044",
+      "oldId": "rec-045",
+      "raw": [
+       "rec-044",
+       "rec-046",
+       "rec-047",
+       "rec-048",
+       "rec-045"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q22",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "temporal"
+   },
+   {
+    "input": "What tool does my team use for on-call paging these days?",
+    "output": "Your team uses Opsgenie for on-call alerting and escalations. It replaced PagerDuty as of 2026-06-06.",
+    "supersedes": [
+     {
+      "newId": "rec-002",
+      "oldId": "rec-035",
+      "raw": [
+       "rec-035",
+       "rec-002",
+       "rec-003",
+       "rec-045",
+       "rec-049"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q26",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   },
+   {
+    "input": "When is my Project Heron cutover currently scheduled?",
+    "output": "Your Project Heron cutover is currently scheduled for Saturday, July 18, 2026. It was originally April 18, and my notes say it was later switched to July 18. An older note also lists May 30, and the milestone dates built around it (such as Go/No-Go on May 27) may be out of date.",
+    "supersedes": [
+     {
+      "newId": "rec-013",
+      "oldId": "rec-029",
+      "raw": [
+       "rec-013",
+       "rec-014",
+       "rec-029",
+       "rec-012",
+       "rec-009",
+       "rec-007",
+       "rec-050",
+       "rec-015",
+       "rec-051",
+       "rec-052"
+      ]
+     },
+     {
+      "newId": "rec-013",
+      "oldId": "rec-014",
+      "raw": [
+       "rec-013",
+       "rec-014",
+       "rec-029",
+       "rec-012",
+       "rec-009",
+       "rec-007",
+       "rec-050",
+       "rec-015",
+       "rec-051",
+       "rec-052"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q24",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   },
+   {
+    "input": "Which district do I live in?",
+    "output": "You live in Brindlemoor. That's the only location I have for you, so I don't know if it's a district, a town, or something else.",
+    "supersedes": [
+     {
+      "newId": "rec-040",
+      "oldId": "rec-041",
+      "raw": [
+       "rec-041",
+       "rec-017",
+       "rec-044",
+       "rec-042",
+       "rec-053",
+       "rec-039",
+       "rec-047"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q27",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   },
+   {
+    "input": "How should my answers be formatted?",
+    "output": "Use short paragraphs instead of bullets for normal conversation, and put the answer first with no preamble. The exception is on-call and incident-response content, where you want short, skimmable bullet lists. Summaries and checklists should be tight, and leadership reports should be terse paragraphs, not tables.",
+    "supersedes": [
+     {
+      "newId": "rec-046",
+      "oldId": "rec-049",
+      "raw": [
+       "rec-046",
+       "rec-048",
+       "rec-049",
+       "rec-054",
+       "rec-044"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q28",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   },
+   {
+    "input": "When do I do the on-call handover these days?",
+    "output": "Your on-call handover is on Wednesday at 11am. It moved from Monday at 10am, which is why your Monday mornings are now free.\n\nOne note mentions a \"Thursday 9am\" handover slot. That conflicts with the rest, so tell me if the time has changed again.",
+    "supersedes": [
+     {
+      "newId": "rec-009",
+      "oldId": "rec-035",
+      "raw": [
+       "rec-052",
+       "rec-035",
+       "rec-055",
+       "rec-056",
+       "rec-057",
+       "rec-002",
+       "rec-003",
+       "rec-014",
+       "rec-013",
+       "rec-054",
+       "rec-030"
+      ]
+     },
+     {
+      "newId": "rec-052",
+      "oldId": "rec-055",
+      "raw": [
+       "rec-052",
+       "rec-035",
+       "rec-055",
+       "rec-056",
+       "rec-057",
+       "rec-002",
+       "rec-003",
+       "rec-014",
+       "rec-013",
+       "rec-054",
+       "rec-030"
+      ]
+     }
+    ],
+    "qid": "syn-sre-q29",
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "latest_value"
+   }
+  ],
+  "writes": [
+   {
+    "input": "Memory snapshot for actor full-2-syn-sre",
+    "output": "(145 records, see writtenFacts)",
+    "writtenFacts": [
+     "{\"context\":\"Formatting on-call, incident response content, general summaries or checklists, cutover checklist documents, and on-call handover notes for team use\",\"preference\":\"Bullet lists for anything on-call; incident response templates should be short and easy to skim quickly; keep summaries and checklists tight and concise; handover notes should be kept short; for cutover checklists, provide a skeleton with sections only to fill in details later\",\"categories\":[\"runbooks\",\"on-call documentation\",\"on-call handover\",\"incident response\",\"documentation\",\"formatting\",\"communication\",\"templates\",\"cutover\"]}",
+     "{\"context\":\"Scheduling activities or events\",\"preference\":\"Prefers Thursday evening for climbing sessions due to late hours at Granite Yard, usually after work on Tuesday or Thursday evenings\",\"categories\":[\"climbing\",\"scheduling\",\"leisure\"]}",
+     "The user is working on a production database migration project called Project Heron (also referred to as 'Heron migration plan'), migrating from PostgreSQL 12 to PostgreSQL 16 on the same cloud provider. The user is investigating the use of logical replication slots during this PostgreSQL version upgrade. The migration plan is being prepared for leadership review. Key concerns include replication lag, schema freeze timing, and cutover rehearsal. The user owns the cutover rehearsal block in the Heron migration sync agenda. Mirela Voss is the DBA on the project and knows the replica config best. A Heron migration sync is scheduled for Friday afternoon (2026-06-14), to be completed by 5:45 PM.",
+     "The user lives in Brindlemoor, where their team is also based.",
+     "The user goes climbing after work, typically on Tuesday or Thursday evenings.",
+     "{\"context\":\"Dinner party, weekly meal planning, and weeknight cooking\",\"preference\":\"Prefers simple, unfussy meals; batch cooks Sunday through Friday; wants weeknight meals that take 30 minutes max and use one pan if possible\",\"categories\":[\"cooking\",\"dinner party\",\"menu planning\",\"meal planning\",\"batch cooking\",\"weekly prep\",\"time constraints\",\"weeknight meals\"]}",
+     "The user's planned tempo run is 8 km at 5:15/km pace (as of 2026-06-12).",
+     "{\"context\":\"Scheduling a tempo workout\",\"preference\":\"8 km tempo at 5:15 per km\",\"categories\":[\"running\",\"tempo run\",\"training\"]}",
+     "The user planned to make a chicken thigh and cabbage noodle stir-fry with eggs, using dried wheat noodles and topping with chili crisp, on 2026-06-19.",
+     "The user works with PostgreSQL replication and manages a primary cluster named Orion.",
+     "The user has a defined incident response sequence for production incidents: (1) open a dedicated, consistently named incident channel (no shared chatter), (2) name a single incident commander announced in the channel, (3) post status updates every thirty minutes (even if 'no change'), (4) include an IC handoff process, and (5) book a blameless post-incident review within three days of declaration.",
+     "{\"context\":\"Sharing retrospective materials\",\"preference\":\"Wants the final retro skeleton delivered as a single block suitable for pasting to Callum Reyes\",\"categories\":[\"retrospective\",\"formatting\",\"heron\"]}",
+     "{\"context\":\"Planning a retrospective\",\"preference\":\"Prefers to hand Callum Reyes a skeleton for the heron retrospective rather than run it himself\",\"categories\":[\"retrospective\",\"delegation\",\"heron\"]}",
+     "The user is working on a project called 'Heron' with a cutover date of May 30, 2026 (a Saturday, chosen as a low-traffic window).",
+     "{\"context\":\"Posting a Slack channel intro message before teammates are online\",\"preference\":\"The message should read as standalone, not dependent on prior context\",\"categories\":[\"writing style\",\"messaging\",\"Slack\"]}",
+     "The user found the word 'randomized expiry times' acceptable for an executive audience after checking.",
+     "On 2026-06-19, the user had chicken thighs, cabbage, carrots, spring onions, dried wheat noodles, and rice vermicelli available for cooking.",
+     "The user's name is Dara.",
+     "The user prefers timeline sections written with offset notation (e.g., T-14d, T-7d) rather than fixed dates, to make future slips easier to update.",
+     "{\"context\":\"Booking a climbing session window\",\"preference\":\"Prefers a short climbing session block of Thu 18:30 to 20:30\",\"categories\":[\"climbing\",\"scheduling\",\"time management\"]}",
+     "On 2026-07-12, the user meal prepped a sheet-pan chicken thigh and sweet potato tray (300 g chicken thigh, 300 g sweet potato, 150 g broccoli, 1 tbsp olive oil, baked at 220°C for 25–30 minutes) for two servings.",
+     "Action items from the cache stampede postmortem (2026-05-02): add TTL jitter, request coalescing, a load-shed limit on the DB pool, stale-while-revalidate, a cache hit-rate alert, and a load test simulating a mass-expiry event. The cache hit-rate alert will page on-call when session cache hit rate falls below 90% for 2 consecutive minutes, with a warning tier at 95% posting to Slack. No data loss occurred in the incident.",
+     "On 2026-07-12, the user meal prepped a lemony chickpea and rice bowl (150 g cooked rice, 240 g chickpeas, 100 g cucumber) for two servings as a lunch dish.",
+     "{\"context\":\"Scheduling hard workouts during the week\",\"preference\":\"Thursday is not suitable for tempo runs because of late evenings and cooking commitments\",\"categories\":[\"running\",\"scheduling\",\"tempo run\"]}",
+     "The user's long run on Saturday 2026-04-07 is 14 km, with a plan to add a race-pace finish of the last 3 km at approximately 5:25–5:30/km.",
+     "The user created and shipped an incident response template to their team on 2026-02-19, designed to be skimmable at 3am.",
+     "{\"context\":\"Linking evidence in the checklist\",\"preference\":\"Checksum comparison output should be linked in the document as evidence\",\"categories\":[\"documentation\",\"database\",\"evidence\"]}",
+     "{\"context\":\"Long run session timing and structure\",\"preference\":\"14k long run always on Saturday at dawn, with a race-pace finish for the last 3km\",\"categories\":[\"running\",\"long run\",\"training\",\"training schedule\"]}",
+     "The user is registered for the Lakeside Half (half marathon).",
+     "The user prefers dinner menus that are not fussy and are mostly make-ahead. For weeknight meals, the user likes dishes that take 30 minutes or less and can be made in one pan.",
+     "The user goes for a run after work on Friday afternoons.",
+     "The user has a friend who climbs outdoors (sport routes and some trad) and has been climbing for years. The user was looking for a birthday gift for this climbing friend with a budget of around 60 euros (as of 2026-06-02).",
+     "The user was setting up a new Slack channel called #postmortem-followups for incident postmortem follow-ups.",
+     "{\"context\":\"Tracking overdue action items in a Slack channel\",\"preference\":\"Items open more than 30 days should get flagged, done by the channel owner weekly\",\"categories\":[\"incident management\",\"Slack\",\"operations\"]}",
+     "{\"context\":\"Structuring retrospective timeline entries\",\"preference\":\"Timeline entries should be dated events only, one line each, with a link to the ticket or log, leaving interpretation for the what-hurt block\",\"categories\":[\"retrospective\",\"timeline\",\"formatting\"]}",
+     "The user works with PostgreSQL database hosts and has a disk_usage_high alert for db hosts.",
+     "{\"context\":\"Presenting migration risks in a kickoff document\",\"preference\":\"Limit the risk list to the top 6 items\",\"categories\":[\"database migration\",\"risk management\",\"documentation\"]}",
+     "The user prefers bullet lists for on-call runbooks.",
+     "{\"context\":\"Writing a Slack channel introduction message\",\"preference\":\"Do not include a blameless language line, as it is already in the doc template\",\"categories\":[\"writing style\",\"messaging\",\"Slack\"]}",
+     "{\"context\":\"Adding asks or action items to a kickoff document\",\"preference\":\"Keep the asks section to 3 bullets maximum\",\"categories\":[\"documentation\",\"presentations\",\"action items\"]}",
+     "The user is planning race week logistics for the Lakeside Half, including blocking off calendar time (as of 2026-06-06).",
+     "{\"context\":\"Agenda output format\",\"preference\":\"Agenda delivered as plain text\",\"categories\":[\"agenda\",\"formatting\",\"output\"]}",
+     "The user finds morning runs easier on weekdays.",
+     "The user has a manager named Oskar Brandt. The user also has a friend who is an experienced outdoor climber (sport and some trad).",
+     "The user was on-call during the week of 2026-03-16 and expected to be paged by PagerDuty. The on-call handover was switched to Wednesday at 11am, making Monday mornings free.",
+     "{\"context\":\"Restaurant reservation\",\"preference\":\"Prefers a reservation time of 7:30pm\",\"categories\":[\"dining\",\"restaurant booking\"]}",
+     "{\"context\":\"Cache hit-rate alert configuration\",\"preference\":\"Include a warning tier at 95% cache hit rate that goes to Slack rather than paging on-call\",\"categories\":[\"alerting\",\"monitoring\",\"cache\"]}",
+     "The user decided to use 'cache stampede' as the primary term in postmortem documents, with 'thundering herd' noted as an alias in the definition, because readers are mixed on terminology.",
+     "The user is working on a production database migration project called Project Heron, migrating from PostgreSQL 12 to PostgreSQL 16 on the same cloud provider. The user is investigating the use of logical replication slots during this PostgreSQL version upgrade. Key concerns include replication lag, schema freeze timing, and cutover rehearsal. The user owns the cutover rehearsal block in the Heron migration sync agenda. Mirela Voss is the DBA on the project and knows the replica config best. A Heron migration sync was scheduled for Friday afternoon (2026-06-14), to be completed by 5:45 PM. The user is also preparing handover notes for Project Heron (due before Thursday 9am on-call handover slot), structured with five sections: current state, open risks, runbook links, pending decisions, and contacts. Callum Reyes owns the Heron retrospective; the user intends to hand Callum a skeleton plan rather than run the retrospective themselves.",
+     "On 2026-06-28, Dara received a third follow-up sales email from a vendor called Tracelane (rep: Marcus) requesting a 30-minute demo, and declined it stating it isn't the right fit. Dara preferred reply language that does not invite further follow-up or suggest a future opening.",
+     "The user is working on a database migration project called Project Heron, migrating from PostgreSQL 12 to PostgreSQL 16 on the same cloud provider. The user is knowledgeable about PostgreSQL internals including autovacuum, VACUUM behavior, and replication slots, and is actively tuning per-table autovacuum settings (autovacuum_vacuum_scale_factor, autovacuum_vacuum_threshold) for large tables. The user is aware that the default autovacuum_vacuum_scale_factor of 20% is problematic for large tables, and experienced an issue where VACUUM ran but dead tuple counts remained high.",
+     "On the day of the dinner party, the user is getting home from a call with their manager Oskar Brandt around 5:00 PM, so cooking starts at 5:30 PM with guests arriving at 8:00 PM.",
+     "{\"context\":\"Weekly meal planning, batch cooking, and adding protein or bulk to dishes\",\"preference\":\"High protein meals that reheat well, planning 4 dinners; prefers bulking up dishes without extra prep work\",\"categories\":[\"meal planning\",\"nutrition\",\"batch cooking\",\"meal prep\",\"efficiency\"]}",
+     "The user prefers short paragraphs in responses, not bullet points.",
+     "{\"context\":\"Preparing a database migration kickoff document for engineering leads and product stakeholders, including timeline structure\",\"preference\":\"Keep content short for an audience of engineering leads and a couple of product people; structure timelines using offsets from cutover date (T-14d, T-7d, T-1d, T+1d) so future slips require only a one-line change\",\"categories\":[\"database migration\",\"documentation\",\"presentations\",\"migration planning\",\"timeline\"]}",
+     "The user blocked Thursday 18:30–20:30 for the Heron project go/no-go or a related milestone event (short block).",
+     "The user's team switched from PagerDuty to Opsgenie for alerting/on-call escalations as of 2026-06-06, with a DBA secondary escalation policy. Escalation policy: Tier 1 (primary on-call) has a 5-minute acknowledgement timeout before escalating to secondary; secondary has 10 minutes before escalating to the engineering lead. The team also has an incident response template (shipped 2026-02-19) designed to be skimmable at 3am.",
+     "{\"context\":\"Tracking current fitness baseline\",\"preference\":\"Currently running about 25 km per week with no structured training\",\"categories\":[\"running\",\"weekly mileage\",\"training baseline\"]}",
+     "The user observed a hash join spilling to disk (Hash Batches: 4, Disk usage: 61MB) on staging, then resolved it by setting work_mem to 64MB for the session, which dropped query time to 340ms with Hash Batches reduced to 1.",
+     "The user prefers metric units and does not use cups for measurements; meal prep quantities are in metric units, scaled to 2 servings each.",
+     "{\"context\":\"Writing a Slack channel introduction message\",\"preference\":\"No fluff; keep the tone ops-flavored\",\"categories\":[\"writing style\",\"messaging\",\"Slack\"]}",
+     "The user does weekly meal prep on Sunday evening, preparing meals that need to last until Friday (about 4 dinners). The user prioritizes high-protein meals that reheat well. Weekly long run is on Saturday at dawn.",
+     "The user is moving home with one other person from a flat, with approximately 40 boxes to pack. They have recently moved to Harrowgate Quay, and the new place is already sorted; the main task is clearing out the old flat.",
+     "{\"context\":\"Postmortem documentation style, general writing/card messages, and declining vendor outreach\",\"preference\":\"Dry tone across writing contexts — no blame in lessons learned sections, no cheesy language in card messages, and in rejection emails: no nurture/follow-up language, while softening blunt phrasing (e.g., 'isn't a fit for us') without implying any future opening\",\"categories\":[\"writing style\",\"postmortem\",\"documentation\",\"card writing\",\"communication style\",\"email\",\"tone\",\"vendor communication\",\"sales outreach\"]}",
+     "{\"context\":\"Receiving technical explanations or analysis\",\"preference\":\"Answer first, then explanation, with no preamble\",\"categories\":[\"communication style\",\"response format\"]}",
+     "{\"context\":\"Replying to a sales email\",\"preference\":\"Reply direct without cc'ing others when only one contact has the sender's email address\",\"categories\":[\"email\",\"vendor communication\"]}",
+     "{\"context\":\"Specifying escalation tooling in runbooks\",\"preference\":\"Reference PagerDuty for escalation policy\",\"categories\":[\"runbooks\",\"PagerDuty\",\"escalation\"]}",
+     "The user puts chili crisp on almost every dish they cook.",
+     "Biscuit the cat will hide in the bedroom during the dinner party.",
+     "The user noted that hidden consumers (cron jobs, analytics, ETL pipelines) still pointing at the old database is a risk that 'always bites' in database migrations.",
+     "{\"context\":\"Scheduling a post-incident review\",\"preference\":\"Book the review within three days of declaration, and it must be blameless\",\"categories\":[\"incident response\",\"post-incident review\",\"process\"]}",
+     "{\"context\":\"Formatting on-call, incident response content, general summaries or checklists, cutover checklist documents, and on-call handover notes for team use\",\"preference\":\"Bullet lists for anything on-call; incident response templates should be short and easy to skim quickly; keep summaries and checklists tight and concise; for cutover checklists, provide a skeleton with sections only to fill in details later; handover notes should include a section for things that looked scary but turned out fine (false alarms / red herrings) to prevent the next person from panicking\",\"categories\":[\"runbooks\",\"on-call documentation\",\"on-call handover\",\"incident response\",\"documentation\",\"formatting\",\"communication\",\"templates\",\"cutover\"]}",
+     "The user prefers terse writing in paragraphs, not tables.",
+     "{\"context\":\"Setting up communication channels during a production incident\",\"preference\":\"Incident channel must be dedicated to one incident, with no shared chatter from other topics\",\"categories\":[\"incident response\",\"communication\",\"channels\"]}",
+     "The user lives with a partner named Teodor, and evening runs need to fit around dinner.",
+     "{\"context\":\"Documenting rollback criteria\",\"preference\":\"Rollback criteria should be kept terse\",\"categories\":[\"documentation\",\"rollback\",\"cutover\"]}",
+     "{\"context\":\"Work schedule management and handover note preparation\",\"preference\":\"Monday mornings are free; on-call handover is on Wednesday at 11am; handover notes must be ready before the on-call handover slot at Thursday 9am, with timeline worked backwards from that slot\",\"categories\":[\"scheduling\",\"work\",\"calendar\",\"handover notes\",\"deadlines\"]}",
+     "{\"context\":\"Dinner party cooking\",\"preference\":\"Wants the starter handled by a guest (Teodor), and only needs a main, side, and dessert\",\"categories\":[\"dinner party\",\"menu planning\",\"cooking\"]}",
+     "{\"context\":\"Half marathon race goal updated twice: originally 2:05, then 1:55, now dropped to 1:50; training paces need to come down accordingly\",\"preference\":\"Target half marathon finish time is 1:50; training paces need to be adjusted down\",\"categories\":[\"running\",\"half marathon\",\"race goal\",\"pace\",\"training\"]}",
+     "{\"context\":\"Writing runbook triage or escalation steps\",\"preference\":\"Actual commands included inline\",\"categories\":[\"runbooks\",\"commands\",\"formatting\"]}",
+     "The user works as an SRE (Site Reliability Engineer) at Quillfield Payments.",
+     "{\"context\":\"Seasoning dishes while cooking\",\"preference\":\"Puts chili crisp on almost every dish and wants sauces and flavors that pair well with it\",\"categories\":[\"cooking\",\"condiments\",\"chili crisp\",\"flavor pairing\"]}",
+     "The Heron project milestone schedule relative to the May 30, 2026 cutover is: Schema freeze on Fri Apr 25, Dry Run 1 on Fri May 8, Dry Run 2 on Fri May 15 or Sat May 16, Rollback Rehearsal on Wed May 20, and Go/No-Go on Wed May 27.",
+     "Project Heron cutover date was originally April 18, 2026, then switched to July 18, 2026.",
+     "{\"context\":\"Postmortem terminology for mixed audiences\",\"preference\":\"Use \\\"cache stampede\\\" as the primary term, define it once with \\\"also known as thundering herd\\\" so both terms are findable\",\"categories\":[\"documentation\",\"terminology\"]}",
+     "The user gets home late on Thursdays and cooking takes up the evening, making evening runs on that day difficult.",
+     "{\"context\":\"Planning a training week structure\",\"preference\":\"Training week should include 4 runs, 1 strength day, and 1 full rest day\",\"categories\":[\"running\",\"training plan\",\"weekly schedule\"]}",
+     "{\"context\":\"Assigning incident ownership\",\"preference\":\"One person is named incident commander, announced explicitly in the incident channel\",\"categories\":[\"incident response\",\"roles\",\"communication\"]}",
+     "The user was writing a runbook for a disk_usage_high alert covering WAL growth and table data scenarios on db hosts.",
+     "Replica-2 on the Orion cluster serves reporting workloads; no other replicas were affected by the 2026-04-15 lag incident.",
+     "The user's oven only fits one large dish at a time.",
+     "The user prefers terse rollback criteria documentation.",
+     "The user has a shellfish allergy and avoids shellfish.",
+     "The user has a 17-year-old elderly cat named Biscuit who gets stressed by noise.",
+     "The user is working with a large table referred to as 'big_table' and is tuning its per-table autovacuum settings (autovacuum_vacuum_scale_factor, autovacuum_vacuum_threshold) to address issues with the default 20% scale factor being problematic at scale. The user experienced a case where VACUUM ran but dead tuples still showed high counts.",
+     "The max_standby_streaming_delay on replica-2 is set to 30 minutes.",
+     "The user is preparing for the Lakeside Half (half marathon) scheduled for 2026-07-25. The last long run before the race is planned for 2026-07-19: 10 km easy at conversational pace.",
+     "The user plans a carb-heavy dinner on Friday 2026-07-18 before the last long run. The planned dish is baked pasta: 180 g dry penne, 400 g tomato passata, 125 g mozzarella, and basil, baked at 200°C for 20 minutes, for two servings.",
+     "The user was debugging a slow query on staging (2026-03-16) that took 14 seconds, involving an orders table joined to order_items, filtered by merchant_id and created_at range. The staging database was restored from a dump and was missing foreign key indexes (including an index on order_items(order_id)), and ANALYZE had not been run. After creating the missing index and running ANALYZE, query time dropped from 14s to 1.8s and the plan switched to a hash join.",
+     "{\"context\":\"Packing books for a move\",\"preference\":\"Books should go in small boxes only, not big boxes\",\"categories\":[\"moving\",\"packing\",\"books\"]}",
+     "The user is planning a birthday dinner for a friend on Saturday (2026-03-28) for 7 people at 7:30pm in Brindlemoor.",
+     "The user is preparing a kickoff presentation for engineering leads and a couple of product people, scheduled for the week of 2026-01-19.",
+     "{\"context\":\"Structuring a running training week\",\"preference\":\"Keep easy runs at their current pace; only change the tempo day\",\"categories\":[\"running\",\"training\",\"tempo run\",\"easy run\"]}",
+     "The Tracelane sales rep (Marcus) only had the user's email address, not other people at the user's company.",
+     "Project Heron has a cutover date of April 18, 2026. Pre-cutover gate process includes: (1) snapshot the replica, (2) freeze schema changes with no exceptions, (3) run checksum comparison between old and new databases, (4) obtain Oskar's sign-off as a hard stop before proceeding — nothing proceeds without Oskar's sign-off.",
+     "{\"context\":\"SLO error budget reporting\",\"preference\":\"Include a note that budget consumption is below linear pace when approximately 60 percent through the window\",\"categories\":[\"SLO reporting\",\"error budget\",\"payment API\"]}",
+     "{\"context\":\"Weekly meal planning, batch cooking, and restaurant booking\",\"preference\":\"No shellfish; has a shellfish allergy requiring restaurants to avoid cross-contact including shared fryers and utensils\",\"categories\":[\"food restrictions\",\"food allergy\",\"shellfish\",\"meal planning\",\"batch cooking\",\"dining\"]}",
+     "The user is training for the Lakeside Half marathon (2026-07-25) with a target time of 1:50 (previously 1:55, ~5:27/km race pace for 21.1 km), currently running about 25 km per week.",
+     "The user planned to add a composite index on orders(merchant_id, created_at) on staging.",
+     "{\"context\":\"Formatting on-call/incident content, general summaries, checklists, leadership reports, and ongoing conversations\",\"preference\":\"Bullet lists for on-call and incident response templates (short, easy to skim); summaries and checklists tight and concise; leadership reports use paragraphs instead of tables with terse writing; ongoing conversational responses use short paragraphs instead of bullet points\",\"categories\":[\"runbooks\",\"on-call documentation\",\"incident response\",\"documentation\",\"formatting\",\"communication\",\"reports\",\"document style\",\"writing style\"]}",
+     "The user needed to rewrite a cache stampede incident summary from 900 words down to under 200 words for an executive audience.",
+     "{\"context\":\"Postmortem documentation style, general writing/card messages, and declining vendor outreach\",\"preference\":\"Dry tone across writing contexts — no blame in lessons learned sections, no cheesy language in card messages, and no nurture/follow-up language (e.g., 'if that changes') in rejection emails\",\"categories\":[\"writing style\",\"postmortem\",\"documentation\",\"card writing\",\"communication style\",\"email\",\"vendor communication\",\"sales outreach\"]}",
+     "The user climbs at Granite Yard; their hands get wrecked after climbing sessions there.",
+     "{\"context\":\"Pre-race carb loading dinner\",\"preference\":\"Wants a carb-heavy dinner on Friday before the Saturday long run\",\"categories\":[\"meal prep\",\"running\",\"nutrition\"]}",
+     "{\"context\":\"Pre-cutover gate ordering for production database cutovers\",\"preference\":\"Before a production database cutover, always snapshot the replica first as gate 1\",\"categories\":[\"database\",\"cutover\",\"production\",\"pre-cutover gates\"]}",
+     "{\"context\":\"Pre-cutover gate sequencing\",\"preference\":\"After snapshotting the replica, freeze schema changes with no exceptions, then run a checksum comparison between old and new databases\",\"categories\":[\"database\",\"cutover\",\"schema management\",\"pre-cutover gates\"]}",
+     "{\"context\":\"Recipe unit, quantity, and serving preferences\",\"preference\":\"Prefers metric units (no cups or ounces); scale all recipes to two servings (previously 4)\",\"categories\":[\"cooking\",\"units of measurement\",\"recipes\",\"measurements\",\"recipe preferences\",\"meal prep\"]}",
+     "The user wrote a postmortem for a cache stampede incident on the session cache (2026-05-02): TTL expiry lined up causing all requests to hit the DB at once. Timeline: session cache keys expired at 09:41 UTC, DB CPU hit 100% by 09:43 UTC, error rate alert fired at 09:44 UTC, mitigated at 10:12 UTC by manually warming the cache. This incident was the primary contributor to Payment API downtime in the subsequent 30-day SLO window (9.4 min of 21.6 min error budget consumed, 43.5%).",
+     "The user has a recurring problem with books being packed in boxes that are too large.",
+     "The user climbs at a gym called Granite Yard, which has late hours on Thursdays.",
+     "{\"context\":\"Scheduling weekday runs\",\"preference\":\"Morning runs are preferred on weekdays to fit around evening dinner with partner Teodor\",\"categories\":[\"running\",\"scheduling\",\"morning runs\"]}",
+     "The user wants the Heron retro skeleton to be a 60-minute, blameless session with four blocks: timeline of the migration, what went well, what hurt, and action items with owners.",
+     "{\"context\":\"Selecting a birthday gift for a friend\",\"preference\":\"Prefers consumable or safe-to-guess gifts over gear like slings when the recipient is picky about brands\",\"categories\":[\"gift giving\",\"climbing\",\"shopping\"]}",
+     "The user's training week plan (as of 2026-04-06): Tue easy 6 km, Thu intervals (5x800m), Sat long run. Previous plan (2026-01-26): Mon rest, Tue tempo 8 km, Wed strength, Thu easy 6 km, Fri rest, Sat easy 5 km, Sun long 12 km (~31 km/week).",
+     "The user is training for a half marathon with a target time of 1:50, currently running about 25 km per week with no structured training plan. Updated training paces (as of 2026-06-12): tempo at ~5:13–5:15/km, intervals at ~4:50/km, and long runs at ~6:05–6:20/km.",
+     "The user is working on an SLO report (as of 2026-05-22) with a section on Payment API availability. Target: 99.95% availability. In the current 30-day window (~60% elapsed), the Payment API has consumed 9.4 minutes of downtime out of a 21.6-minute error budget (43.5%), mostly due to the cache stampede incident (2026-05-02). Error budget burn is below linear pace.",
+     "{\"context\":\"Database session memory tuning\",\"preference\":\"Set work_mem to 64MB for the session rather than globally\",\"categories\":[\"database\",\"PostgreSQL\",\"performance tuning\",\"memory settings\"]}",
+     "The user (Dara) prefers responses that lead with the answer first, without preamble or explanation upfront. Also prefers email language that does not invite further follow-up or suggest a future opening.",
+     "The user's weekly schedule includes: Monday deep work 9–11 and meetings after lunch, Tuesday meetings and reviews, Wednesday on-call handover prep at 10:30 and handover at 11:00 with no meetings until 13:00, Thursday project work, and Friday a light load with wrap-up.",
+     "The user is considering swapping their on-call shift during race week for the Lakeside Half.",
+     "{\"context\":\"Providing status updates during an incident\",\"preference\":\"Status updates posted every thirty minutes, even if there is no change\",\"categories\":[\"incident response\",\"communication\",\"status updates\"]}",
+     "On 2026-04-15 around 03:10 UTC, replica-2 on the Orion cluster experienced a replication lag spike of ~40 seconds lasting ~6 minutes, caused by a long-running reporting query (7 minutes) delaying WAL replay.",
+     "{\"context\":\"Meeting scheduling\",\"preference\":\"The Friday afternoon sync must finish by 17:45\",\"categories\":[\"meeting\",\"scheduling\"]}",
+     "{\"context\":\"Requesting retrospective prompts\",\"preference\":\"Wants exactly 4 what-hurt prompts for the retrospective\",\"categories\":[\"retrospective\",\"prompts\"]}",
+     "The user has a shellfish allergy.",
+     "The user's team switched from PagerDuty to Opsgenie for alerting/on-call escalations as of 2026-06-06, with a DBA secondary escalation policy. Escalation policy: Tier 1 (primary on-call) has a 5-minute acknowledgement timeout before escalating to secondary; secondary has 10 minutes before escalating to the engineering lead. The user also has a defined incident response process with dedicated incident channels, a single incident commander, 30-minute status updates, IC handoff, and blameless reviews within three days.",
+     "The user does the on-call handover on Mondays at 10am.",
+     "The user prefers simple labelling systems without colour coding.",
+     "{\"context\":\"Pre-cutover authorization gate\",\"preference\":\"The last pre-cutover gate requires Oskar's sign-off; nothing proceeds without it, marked as a hard stop\",\"categories\":[\"authorization\",\"pre-cutover gates\",\"sign-off\"]}",
+     "{\"context\":\"Interval training session\",\"preference\":\"Keep intervals at 5x800\",\"categories\":[\"running\",\"intervals\",\"training\"]}",
+     "The user prefers handover notes structured with five sections: current state, open risks, runbook links, pending decisions, and contacts.",
+     "The user completed a tempo run of 8k at an average pace of 5:20/km with steady heart rate on 2026-04-06.",
+     "{\"context\":\"Packing and moving organisation\",\"preference\":\"No colour coding for box labelling\",\"categories\":[\"moving\",\"packing\",\"organisation\"]}",
+     "The user wants the lessons learned section of postmortems written in a dry tone with no blame.",
+     "The user is planning a dinner party for 6 guests on Saturday, 2026-03-07. A guest named Teodor is cooking the starter, while the user is responsible for the main, side, and dessert."
+    ],
+    "expectedFacts": [
+     "User works as a site reliability engineer at Quillfield Payments.",
+     "User's database migration project is called Project Heron.",
+     "User lives with their partner Teodor.",
+     "When a production incident is declared, user opens the incident channel, then names an incident commander, then posts a status update every thirty minutes, then books the review within three days.",
+     "User's manager is Oskar Brandt.",
+     "User prefers metric units, including in recipes.",
+     "User has an elderly cat named Biscuit who is 17 years old.",
+     "User's bouldering gym is called Granite Yard.",
+     "User has a shellfish allergy.",
+     "User's primary Postgres cluster is named Orion.",
+     "User wants the assistant to give the answer first, before any explanation.",
+     "User lives in the Harrowgate Quay district.",
+     "User does weekly meal prep on Sunday evening.",
+     "User prefers answers written as short paragraphs rather than bullets.",
+     "User's Project Heron cutover is scheduled for July 18.",
+     "User's payment API has an availability SLO of 99.95 percent.",
+     "Before a production database cutover, user snapshots the replica, then freezes schema changes, then runs the checksum compare, then gets Oskar's sign-off.",
+     "User's team now uses Opsgenie for paging during on-call.",
+     "User is registered for the Lakeside Half race.",
+     "User's half-marathon target time is 1:50.",
+     "User's database administrator colleague on Project Heron is Mirela Voss.",
+     "User loves chili crisp on almost every dish they cook.",
+     "User does the on-call handover on Thursday at 9am.",
+     "User's Project Heron retrospective is owned by Callum Reyes.",
+     "User wants recipes scaled to two servings.",
+     "User does the weekly long run on Saturday at dawn."
+    ],
+    "qid": null,
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "synthetic"
+   }
+  ],
+  "contradiction": [
+   {
+    "input": "Stored memories for actor full-2-syn-sre",
+    "output": "(20 memories, see memories)",
+    "memories": [
+     "The user lives in Brindlemoor, where their team is also based.",
+     "The user prefers bullet lists for on-call runbooks.",
+     "The Heron project milestone schedule relative to the May 30, 2026 cutover is: Schema freeze on Fri Apr 25, Dry Run 1 on Fri May 8, Dry Run 2 on Fri May 15 or Sat May 16, Rollback Rehearsal on Wed May 20, and Go/No-Go on Wed May 27.",
+     "The user is working on a project called 'Heron' with a cutover date of May 30, 2026 (a Saturday, chosen as a low-traffic window).",
+     "{\"context\":\"Formatting on-call, incident response content, general summaries or checklists, cutover checklist documents, and on-call handover notes for team use\",\"preference\":\"Bullet lists for anything on-call; incident response templates should be short and easy to skim quickly; keep summaries and checklists tight and concise; handover notes should be kept short; for cutover checklists, provide a skeleton with sections only to fill in details later\",\"categories\":[\"runbooks\",\"on-call documentation\",\"on-call handover\",\"incident response\",\"documentation\",\"formatting\",\"communication\",\"templates\",\"cutover\"]}",
+     "The user does the on-call handover on Mondays at 10am.",
+     "The user is moving home with one other person from a flat, with approximately 40 boxes to pack. They have recently moved to Harrowgate Quay, and the new place is already sorted; the main task is clearing out the old flat.",
+     "The user's weekly schedule includes: Monday deep work 9–11 and meetings after lunch, Tuesday meetings and reviews, Wednesday on-call handover prep at 10:30 and handover at 11:00 with no meetings until 13:00, Thursday project work, and Friday a light load with wrap-up.",
+     "The user was on-call during the week of 2026-03-16 and expected to be paged by PagerDuty. The on-call handover was switched to Wednesday at 11am, making Monday mornings free.",
+     "The user prefers short paragraphs in responses, not bullet points.",
+     "{\"context\":\"Formatting on-call/incident content, general summaries, checklists, leadership reports, and ongoing conversations\",\"preference\":\"Bullet lists for on-call and incident response templates (short, easy to skim); summaries and checklists tight and concise; leadership reports use paragraphs instead of tables with terse writing; ongoing conversational responses use short paragraphs instead of bullet points\",\"categories\":[\"runbooks\",\"on-call documentation\",\"incident response\",\"documentation\",\"formatting\",\"communication\",\"reports\",\"document style\",\"writing style\"]}",
+     "Project Heron cutover date was originally April 18, 2026, then switched to July 18, 2026.",
+     "Project Heron has a cutover date of April 18, 2026. Pre-cutover gate process includes: (1) snapshot the replica, (2) freeze schema changes with no exceptions, (3) run checksum comparison between old and new databases, (4) obtain Oskar's sign-off as a hard stop before proceeding — nothing proceeds without Oskar's sign-off.",
+     "The user's team switched from PagerDuty to Opsgenie for alerting/on-call escalations as of 2026-06-06, with a DBA secondary escalation policy. Escalation policy: Tier 1 (primary on-call) has a 5-minute acknowledgement timeout before escalating to secondary; secondary has 10 minutes before escalating to the engineering lead. The team also has an incident response template (shipped 2026-02-19) designed to be skimmable at 3am.",
+     "The user's team switched from PagerDuty to Opsgenie for alerting/on-call escalations as of 2026-06-06, with a DBA secondary escalation policy. Escalation policy: Tier 1 (primary on-call) has a 5-minute acknowledgement timeout before escalating to secondary; secondary has 10 minutes before escalating to the engineering lead. The user also has a defined incident response process with dedicated incident channels, a single incident commander, 30-minute status updates, IC handoff, and blameless reviews within three days.",
+     "{\"context\":\"Half marathon race goal updated twice: originally 2:05, then 1:55, now dropped to 1:50; training paces need to come down accordingly\",\"preference\":\"Target half marathon finish time is 1:50; training paces need to be adjusted down\",\"categories\":[\"running\",\"half marathon\",\"race goal\",\"pace\",\"training\"]}",
+     "The user is training for a half marathon with a target time of 1:50, currently running about 25 km per week with no structured training plan. Updated training paces (as of 2026-06-12): tempo at ~5:13–5:15/km, intervals at ~4:50/km, and long runs at ~6:05–6:20/km.",
+     "The user is working on a production database migration project called Project Heron, migrating from PostgreSQL 12 to PostgreSQL 16 on the same cloud provider. The user is investigating the use of logical replication slots during this PostgreSQL version upgrade. Key concerns include replication lag, schema freeze timing, and cutover rehearsal. The user owns the cutover rehearsal block in the Heron migration sync agenda. Mirela Voss is the DBA on the project and knows the replica config best. A Heron migration sync was scheduled for Friday afternoon (2026-06-14), to be completed by 5:45 PM. The user is also preparing handover notes for Project Heron (due before Thursday 9am on-call handover slot), structured with five sections: current state, open risks, runbook links, pending decisions, and contacts. Callum Reyes owns the Heron retrospective; the user intends to hand Callum a skeleton plan rather than run the retrospective themselves.",
+     "{\"context\":\"Work schedule management and handover note preparation\",\"preference\":\"Monday mornings are free; on-call handover is on Wednesday at 11am; handover notes must be ready before the on-call handover slot at Thursday 9am, with timeline worked backwards from that slot\",\"categories\":[\"scheduling\",\"work\",\"calendar\",\"handover notes\",\"deadlines\"]}",
+     "The user is training for the Lakeside Half marathon (2026-07-25) with a target time of 1:50 (previously 1:55, ~5:27/km race pace for 21.1 km), currently running about 25 km per week."
+    ],
+    "qid": null,
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "synthetic"
+   }
+  ],
+  "summary": [
+   {
+    "input": "Summarise session syn-sre-s08",
+    "output": "                <topic name=\"Heron Project Milestone Rescheduling\">\n        The user moved the Heron project cutover date to May 30 (Saturday, intentional low-traffic window). Milestones were recalculated based on fixed offsets from May 30:\n- Schema freeze: Fri Apr 25 (5 weeks / 35 days before; Apr 24 noted as alternative to avoid weekend)\n- Dry run 1: Fri May 8 (~3 weeks before cutover)\n- Dry run 2: Fri May 15 (2 weeks before; Sat May 16 also noted)\n- Rollback rehearsal: Wed May 20 (10 days before)\n- Go/no-go: Wed May 27 (3 days before)\nThe user confirmed May 30 is intentional.\n        </topic>\n<topic name=\"Climbing Session Planning\">\nThe user wants to fit a climbing session this week at Granite Yard, preferring Tuesday or Thursday evenings after work. Thursday was selected due to Granite Yard's late hours. Planned session: Thu 18:30–20:30, with a suggested 17:45 reminder. Session structure: 15 min warm-up, 45 min projecting, 20 min antagonist work, cool down. The assistant cannot write to the calendar directly and advised the user to add it manually.\n</topic>",
+    "context": [
+     "user: need to push the heron milestones. cutover moved, we've just switched it to May 30. can you help me shift the downstream dates",
+     "assistant: Sure. Shifting everything by the same offset is the simplest approach. Can you give me the current milestone list with dates, or tell me which ones are fixed?",
+     "user: schema freeze, dry run 1, dry run 2, rollback rehearsal, go/no-go. dry run 2 was 2 weeks before cutover, rollback rehearsal 10 days before, go/no-go 3 days before. schema freeze 5 weeks before",
+     "assistant: Working back from May 30:\n- Schema freeze: Fri Apr 25\n- Dry run 1: leave your gap choice, or place it ~3 weeks out, Fri May 8\n- Dry run 2: Sat May 16 (2 weeks before). You may prefer Fri May 15 to avoid a weekend.\n- Rollback rehearsal: Wed May 20\n- Go/no-go: Wed May 27\n\nNote May 30 is a Saturday, so confirm that's intended.",
+     "user: sat is intended, low traffic window. schema freeze at 5 weeks is wrong tho, 5 weeks before May 30 is Apr 25? check",
+     "assistant: Checking: May 30 minus 35 days is Apr 25, so that's correct. Apr 25 is a Saturday, though, so Fri Apr 24 is the practical date.\n\n- Schema freeze: Fri Apr 24\n- Dry run 1: Fri May 8\n- Dry run 2: Fri May 15\n- Rollback rehearsal: Wed May 20\n- Go/no-go: Wed May 27",
+     "user: good. now unrelated, want to fit a climbing session this week. usually go after work, tue or thu evening. i'm at Granite Yard, they do late hours on thu",
+     "assistant: Thursday looks better then, with the late hours. Here's a plan:\n- Arrive ~18:30, warm up 15 min on easy problems\n- 45 min of projecting at your limit grade\n- 20 min of antagonist/pull-down work\n- Cool down and stretch\n\nWant me to block a calendar slot?",
+     "user: yeah block thu 18:30 to 20:30. keep it short, thanks",
+     "assistant: Here's the entry:\n- Thu 18:30–20:30: Climbing session\n- Reminder 17:45\n\nI can't write to your calendar directly, so add it there. Want the milestone dates as a shareable list as well?"
+    ],
+    "qid": null,
+    "case_id": "syn-sre",
+    "mode": "memory",
+    "category": "synthetic"
+   }
+  ],
+  "retention": [
+   {
+    "input": "When are we presenting Ember to the board?",
+    "output": "Your team is demoing Project Ember to the board on 14 October.",
+    "messages": [
+     {
+      "role": "user",
+      "content": "Key date for Ember: we demo to the board on 14 October."
+     },
+     {
+      "role": "assistant",
+      "content": "Got it. The Ember board demo is on 14 October."
+     },
+     {
+      "role": "user",
+      "content": "Different topic: how do I write a good user story for emissions reporting?"
+     },
+     {
+      "role": "assistant",
+      "content": "Use the format \"As a [role], I want [capability], so that [outcome],\" then add testable acceptance criteria. For example:\n\n**Story:** As a sustainability analyst, I want to export Scope 1 and 2 emissions by facility and reporting period, so that I can submit accurate figures for our annual disclosure (e.g., CSRD or GHG Protocol).\n\n**Acceptance criteria:**\n- Data can be filtered by facility, scope, and date range.\n- Each figure shows its emission factor source and calculation method.\n- The export matches the required template and includes an audit trail.\n- Missing or inconsistent data is flagged before export.\n\nName the specific regulation or standard, keep each story small enough for one sprint, and include data-quality and auditability needs, since those matter most in emissions reporting."
+     },
+     {
+      "role": "user",
+      "content": "Nice. Can you also suggest acceptance criteria?"
+     },
+     {
+      "role": "assistant",
+      "content": "I don't have the earlier context about what you want acceptance criteria for. All I have is that your team demos the Ember project to the board on 14 October. Which feature or story do you mean? If it's the Ember demo, tell me its scope and I'll draft criteria for it."
+     },
+     {
+      "role": "user",
+      "content": "I'm planning the Ember sprint calendar. Which deadline should the sprint before the demo end on?"
+     },
+     {
+      "role": "assistant",
+      "content": "I don't have that information."
+     },
+     {
+      "role": "user",
+      "content": "When are we presenting Ember to the board?"
+     },
+     {
+      "role": "assistant",
+      "content": "Your team is demoing Project Ember to the board on 14 October."
+     }
+    ],
+    "qid": "rt-projects-01-q1",
+    "case_id": "rt-projects-01",
+    "mode": "memory",
+    "category": "retention"
+   }
+  ]
+ },
+ "judge_verdicts": {
+  "note": "Verdicts from a local Claude (Bedrock) replica of the three LLM-judge evaluators in run full-2; official scores come from EvalKit's own judge.",
+  "summary_faithfulness": {
+   "session": "syn-sre-s08",
+   "score": 0.8571428571428571,
+   "items": [
+    {
+     "claim": "The user moved the Heron cutover date to May 30.",
+     "verdict": "yes",
+     "reason": "The user said the cutover moved and was switched to May 30."
+    },
+    {
+     "claim": "May 30 is a Saturday and is an intentional low-traffic window.",
+     "verdict": "yes",
+     "reason": "The assistant noted May 30 is a Saturday, and the user confirmed it is intended because of the low-traffic window."
+    },
+    {
+     "claim": "Milestones were recalculated using fixed offsets from May 30.",
+     "verdict": "yes",
+     "reason": "The assistant worked back from May 30 using the offsets the user gave."
+    },
+    {
+     "claim": "Schema freeze is Fri Apr 25, which is 5 weeks / 35 days before cutover.",
+     "verdict": "no",
+     "reason": "The conversation established that Apr 25 is a Saturday, so 'Fri Apr 25' is wrong. The final agreed date was Fri Apr 24."
+    },
+    {
+     "claim": "Apr 24 is only noted as an alternative to avoid the weekend.",
+     "verdict": "no",
+     "reason": "The assistant's corrected final list set the schema freeze at Fri Apr 24, and the user accepted it. It was the chosen date, not an alternative."
+    },
+    {
+     "claim": "Dry run 1 is Fri May 8, about 3 weeks before cutover.",
+     "verdict": "yes",
+     "reason": "The final list has Fri May 8, described earlier as about 3 weeks out."
+    },
+    {
+     "claim": "Dry run 2 is Fri May 15, 2 weeks before cutover, with Sat May 16 also noted.",
+     "verdict": "yes",
+     "reason": "The assistant first gave Sat May 16 (2 weeks before), then settled on Fri May 15."
+    },
+    {
+     "claim": "Rollback rehearsal is Wed May 20, 10 days before cutover.",
+     "verdict": "yes",
+     "reason": "This matches the user's offset and the assistant's list."
+    },
+    {
+     "claim": "Go/no-go is Wed May 27, 3 days before cutover.",
+     "verdict": "yes",
+     "reason": "This matches the user's offset and the assistant's list."
+    },
+    {
+     "claim": "The user wants a climbing session this week at Granite Yard, preferring Tuesday or Thursday evenings after work.",
+     "verdict": "yes",
+     "reason": "The user said they usually go after work on Tue or Thu evening and that they are at Granite Yard."
+    },
+    {
+     "claim": "Thursday was selected because of Granite Yard's late hours.",
+     "verdict": "yes",
+     "reason": "The user said the gym has late hours on Thursday, and the assistant picked Thursday for that reason."
+    },
+    {
+     "claim": "The planned session is Thu 18:30–20:30 with a 17:45 reminder.",
+     "verdict": "yes",
+     "reason": "The user asked to block Thu 18:30 to 20:30, and the assistant's entry included a 17:45 reminder."
+    },
+    {
+     "claim": "The session structure is a 15 min warm-up, 45 min projecting, 20 min antagonist work, and a cool down.",
+     "verdict": "yes",
+     "reason": "This matches the assistant's plan."
+    },
+    {
+     "claim": "The assistant cannot write to the calendar directly and advised the user to add the entry manually.",
+     "verdict": "yes",
+     "reason": "The assistant said it can't write to the calendar directly and told the user to add the entry there."
+    }
+   ]
+  },
+  "contradiction_rate": {
+   "case_id": "syn-sre",
+   "score": 0.06842105263157895,
+   "n_pairs": 190,
+   "flagged": [
+    [
+     1,
+     7
+    ],
+    [
+     3,
+     12
+    ],
+    [
+     3,
+     13
+    ],
+    [
+     4,
+     12
+    ],
+    [
+     4,
+     13
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     6,
+     18
+    ],
+    [
+     6,
+     19
+    ],
+    [
+     8,
+     18
+    ],
+    [
+     9,
+     18
+    ],
+    [
+     12,
+     13
+    ],
+    [
+     18,
+     19
+    ]
+   ]
+  },
+  "knowledge_retention": {
+   "case_id": "rt-projects-01",
+   "score": 0.0,
+   "items": [
+    {
+     "fact": "Ember board demo is on 14 October",
+     "verdict": "no",
+     "reason": "The agent recalled the date in the third and final turns. But when the user asked which deadline the sprint before the demo should end on, it answered 'I don't have that information.' The 14 October date was already known, so it acted as if it had forgotten it."
+    },
+    {
+     "fact": "The user's emissions-reporting user story topic (context for 'also suggest acceptance criteria')",
+     "verdict": "no",
+     "reason": "The user asked for acceptance criteria right after the emissions-reporting user story discussion. The agent said it lacked earlier context and asked which feature or story was meant, even though the conversation had just covered it."
+    },
+    {
+     "fact": "The user is planning the Ember sprint calendar and needs the sprint before the demo to end by the demo deadline",
+     "verdict": "no",
+     "reason": "The agent did not use the stated planning goal with the known 14 October demo date. It gave no sprint-end guidance and said it had no information."
+    }
+   ]
+  }
+ },
+ "example_answers": {
+  "syn-sre-q05": {
+   "question": "Which bouldering gym do I go to?",
+   "memory": {
+    "answer": "You climb at Granite Yard. Your notes don't say whether it's a bouldering gym specifically, but it's the gym you go to, and it has late hours on Thursdays.",
+    "tokens_in": 1103,
+    "latency_ms": 2305,
+    "retrieved": [
+     {
+      "record_id": "rec-016",
+      "score": 0.424,
+      "text": "The user climbs at a gym called Granite Yard, which has late hours on Thursdays."
+     },
+     {
+      "record_id": "rec-017",
+      "score": 0.412,
+      "text": "{\"context\":\"Booking a climbing session window\",\"preference\":\"Prefers a short climbing session block of Thu 18:30 to 20:30\",\"categories\":[\"climbing\",\"scheduling\",\"time management\"]}"
+     },
+     {
+      "record_id": "rec-018",
+      "score": 0.401,
+      "text": "{\"context\":\"Scheduling activities or events\",\"preference\":\"Prefers Thursday evening for climbing sessions due to late hours at Granite Yard, usually after work on Tuesday or Thursday evenings\",\"categories\":[\"climbing\",\"s"
+     },
+     {
+      "record_id": "rec-019",
+      "score": 0.397,
+      "text": "The user climbs at Granite Yard; their hands get wrecked after climbing sessions there."
+     },
+     {
+      "record_id": "rec-020",
+      "score": 0.396,
+      "text": "The user goes climbing after work, typically on Tuesday or Thursday evenings."
+     }
+    ]
+   },
+   "full_context": {
+    "answer": "Granite Yard. You mentioned going there after work, usually on Tuesday or Thursday evenings, with late hours on Thursday.",
+    "tokens_in": 28069,
+    "latency_ms": 1710,
+    "retrieved": []
+   }
+  },
+  "syn-sre-q20": {
+   "question": "Back in February, when was my Project Heron cutover scheduled?",
+   "full_context": {
+    "answer": "In February, your Project Heron cutover was scheduled for April 18. You moved it to May 30 in March, and later to July 18.",
+    "tokens_in": 28077,
+    "latency_ms": 2177,
+    "retrieved": []
+   },
+   "memory": {
+    "answer": "I don't have that information.",
+    "tokens_in": 5375,
+    "latency_ms": 7092,
+    "retrieved": [
+     {
+      "record_id": "rec-014",
+      "score": 0.747,
+      "text": "Project Heron has a cutover date of April 18, 2026. Pre-cutover gate process includes: (1) snapshot the replica, (2) freeze schema changes with no exceptions, (3) run checksum comparison between old and new databases, (4"
+     },
+     {
+      "record_id": "rec-013",
+      "score": 0.743,
+      "text": "Project Heron cutover date was originally April 18, 2026, then switched to July 18, 2026."
+     },
+     {
+      "record_id": "rec-029",
+      "score": 0.642,
+      "text": "The user is working on a project called 'Heron' with a cutover date of May 30, 2026 (a Saturday, chosen as a low-traffic window)."
+     },
+     {
+      "record_id": "rec-012",
+      "score": 0.621,
+      "text": "The Heron project milestone schedule relative to the May 30, 2026 cutover is: Schema freeze on Fri Apr 25, Dry Run 1 on Fri May 8, Dry Run 2 on Fri May 15 or Sat May 16, Rollback Rehearsal on Wed May 20, and Go/No-Go on "
+     },
+     {
+      "record_id": "rec-009",
+      "score": 0.588,
+      "text": "The user is working on a production database migration project called Project Heron, migrating from PostgreSQL 12 to PostgreSQL 16 on the same cloud provider. The user is investigating the use of logical replication slot"
+     }
+    ]
+   }
+  },
+  "syn-sre-q24": {
+   "question": "When is my Project Heron cutover currently scheduled?",
+   "full_context": {
+    "answer": "Your Project Heron cutover is currently scheduled for July 18, after you moved it from May 30 (and originally April 18).",
+    "tokens_in": 28074,
+    "latency_ms": 2297,
+    "retrieved": []
+   },
+   "memory": {
+    "answer": "Your Project Heron cutover is currently scheduled for Saturday, July 18, 2026. It was originally April 18, and my notes say it was later switched to July 18. An older note also lists May 30, and the milestone dates built around it (such as Go/No-Go on May 27) may be out of date.",
+    "tokens_in": 5132,
+    "latency_ms": 8616,
+    "retrieved": [
+     {
+      "record_id": "rec-013",
+      "score": 0.817,
+      "text": "Project Heron cutover date was originally April 18, 2026, then switched to July 18, 2026."
+     },
+     {
+      "record_id": "rec-014",
+      "score": 0.803,
+      "text": "Project Heron has a cutover date of April 18, 2026. Pre-cutover gate process includes: (1) snapshot the replica, (2) freeze schema changes with no exceptions, (3) run checksum comparison between old and new databases, (4"
+     },
+     {
+      "record_id": "rec-029",
+      "score": 0.685,
+      "text": "The user is working on a project called 'Heron' with a cutover date of May 30, 2026 (a Saturday, chosen as a low-traffic window)."
+     },
+     {
+      "record_id": "rec-012",
+      "score": 0.654,
+      "text": "The Heron project milestone schedule relative to the May 30, 2026 cutover is: Schema freeze on Fri Apr 25, Dry Run 1 on Fri May 8, Dry Run 2 on Fri May 15 or Sat May 16, Rollback Rehearsal on Wed May 20, and Go/No-Go on "
+     },
+     {
+      "record_id": "rec-009",
+      "score": 0.602,
+      "text": "The user is working on a production database migration project called Project Heron, migrating from PostgreSQL 12 to PostgreSQL 16 on the same cloud provider. The user is investigating the use of logical replication slot"
+     }
+    ]
+   }
+  }
+ }
+}

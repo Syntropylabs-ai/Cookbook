@@ -1,0 +1,5 @@
+# Offline run (RUN_LIVE = False) needs only Jupyter; these are for the live path.
+boto3>=1.42,<2
+bedrock-agentcore>=1.22,<2
+strands-agents>=1.52,<2
+syntropylabs-evalkit>=0.3.5,<0.4

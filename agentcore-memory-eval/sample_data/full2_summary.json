@@ -1,0 +1,28 @@
+{
+  "run": "full-2",
+  "date": "2026-10-21",
+  "scope": {"memory_users": 30, "questions": 245, "answers": 490, "errors": 0, "k": 5},
+  "metrics": [
+    {"family": "Accurate retrieval",   "metric": "MRR",                    "type": "code", "memory": 0.798, "full_context": null,  "pass": ">= 0.50", "n": 192},
+    {"family": "Accurate retrieval",   "metric": "Precision@5",            "type": "code", "memory": 0.394, "full_context": null,  "pass": ">= 0.50", "n": 192},
+    {"family": "Accurate retrieval",   "metric": "Recall@5",               "type": "code", "memory": 0.788, "full_context": null,  "pass": ">= 0.50", "n": 192},
+    {"family": "Test-time learning",   "metric": "Write Recall",           "type": "code", "memory": 0.663, "full_context": null,  "pass": ">= 0.50", "n": 30},
+    {"family": "Test-time learning",   "metric": "Write Precision",        "type": "code", "memory": 0.314, "full_context": null,  "pass": ">= 0.50", "n": 30},
+    {"family": "Test-time learning",   "metric": "Knowledge Retention",    "type": "llm",  "memory": 0.80,  "full_context": 0.87,  "pass": ">= 0.50", "n": 5},
+    {"family": "Long-range",           "metric": "Post-Eviction Accuracy", "type": "code", "memory": 0.805, "full_context": 0.945, "pass": "= 1",     "n": 200},
+    {"family": "Long-range",           "metric": "Summary Faithfulness",   "type": "llm",  "memory": 0.96,  "full_context": null,  "pass": ">= 0.50", "n": 179},
+    {"family": "Conflict resolution",  "metric": "Temporal Accuracy",      "type": "code", "memory": 0.664, "full_context": null,  "pass": ">= 0.50", "n": 61},
+    {"family": "Conflict resolution",  "metric": "Contradiction Rate (lower is better)", "type": "llm", "memory": 0.080, "full_context": null, "pass": "<= 0.10", "n": 10}
+  ],
+  "efficiency": {
+    "input_tokens_per_question": {"memory": 2412, "full_context": 24763, "ratio": 0.10},
+    "cost_per_conversation_usd": {"memory": 0.096, "full_context": 0.412, "ratio": 0.23},
+    "false_abstention": {"memory": 0.07, "full_context": 0.03},
+    "correct_abstention": {"memory": 0.978, "full_context": 0.978}
+  },
+  "weak_slices_post_eviction": [
+    {"slice": "synthetic / temporal", "memory": 0.57, "full_context": 0.90},
+    {"slice": "workflows (procedural)", "memory": 0.73, "full_context": 0.88}
+  ],
+  "notes": "Code metrics computed with EvalKit's engine on the dataset rows; LLM-judge metrics are a local Claude replica of EvalKit's judges (official scores come from the EvalKit UI)."
+}
